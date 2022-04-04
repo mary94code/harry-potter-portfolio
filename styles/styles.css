@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/img-bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/*header styles*/
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* .container{
+    z-index: 1;
+} */
+.btn-open,
+.btn-close {
+    position: absolute;
+}
+
+.btn-close {
+    right: 0;
+}
+
+.cont-main {
+    background-color: rgba(148, 117, 14, 0.9);
+    width: 392px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(75, 12, 12);
+    transition: all 2s ease-in-out;
+}
+
+.middle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sliders {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.shoe-prints {
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+.parts {
+    height: 100vh;
+    width: 196px;
+}
+
+.part-1 {
+    position: absolute;
+    left: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.part-2 {
+    position: absolute;
+    right: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.active-left {
+    left: -48%;
+}
+
+.active-right {
+    right: -48%;
+}
+
+.btns {
+    height: 25px;
+}
+
+.user-img {
+    width: 170px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.line {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Tangerine', cursive;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.links1,
+.links2 {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links-portfolio {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(75, 12, 12);
+}
+
+.icons {
+    color: rgb(75, 12, 12);
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .btn-open,
+    .btn-close,
+    .sliders {
+        display: none;
+    }
+
+    .middle-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        animation-duration: 7s;
+        animation-fill-mode: both;
+        animation-name: fadeIn;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.1;
+        }
+
+        20% {
+            opacity: 0.2;
+        }
+        30% {
+            opacity: 0.3;
+        }
+        40% {
+            opacity: 0.4;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        60% {
+            opacity: 0.6;
+        }
+        70% {
+            opacity: 0.7;
+        }
+        80% {
+            opacity: 0.8;
+        }
+        90% {
+            opacity: 0.9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
